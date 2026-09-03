@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>> Rafif.Dev | Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Menghubungkan ke File CSS Eksternal -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER & NAVBAR -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" onclick="navigateTo('beranda')" class="brand">> Rafif.Dev</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+                <ul class="nav-links" id="navLinks">
+                    <!-- Menggunakan onclick untuk berpindah halaman via JavaScript -->
+                    <li><a href="#" onclick="navigateTo('beranda')" class="nav-item active">🏠 Beranda</a></li>
+                    <li><a href="#" onclick="navigateTo('tentang')" class="nav-item">👤 Tentang Saya</a></li>
+                    <li><a href="#" onclick="navigateTo('jaringan')" class="nav-item">🌐 Jaringan Komputer</a></li>
+                    <li><a href="#" onclick="navigateTo('iot')" class="nav-item">🤖 IoT & Arduino</a></li>
+                    <li><a href="#" onclick="navigateTo('galeri')" class="nav-item">📸 Galeri</a></li>
+                    <li><a href="#" onclick="navigateTo('kontak')" class="nav-item">✉️ Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="padding-top: 40px;">
+        
+        <!-- ==========================================
+             1. HALAMAN BERANDA
+             ========================================== -->
+        <section id="beranda" class="page-section active">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <div class="terminal-block">
+                        <span>> booting portfolio...</span>
+                        <span>> loading user...</span>
+                        <span>> user detected: RAFIF RAMADHAN</span>
+                        <span>> status: ONLINE <span class="cursor"></span></span>
+                    </div>
+                    <h1>HELLO, WORLD.<br>I'M RAFIF RAMADHAN.</h1>
+                    <h2>Siswa Kelas XII<br>Informatika</h2>
+                    <p>"Belajar teknologi, membangun sesuatu, memecahkan masalah, dan terus berkembang."</p>
+                    <div class="hero-buttons">
+                        <a href="#" onclick="navigateTo('galeri')" class="btn btn-primary">[ VIEW MY PROJECTS ]</a>
+                        <a href="#" onclick="navigateTo('kontak')" class="btn btn-secondary">[ CONTACT ME ]</a>
+                    </div>
+                </div>
+                <div class="profile-img-container">
+                    <!-- Pastikan gambar ada di folder images -->
+                    <img src="images/profile.jpg" alt="Rafif Ramadhan Profile">
+                </div>
+            </div>
+
+            <div class="system-status">
+                <h3>SYSTEM STATUS</h3>
+                <div class="status-grid">
+                    <span>USER</span> <span>: RAFIF RAMADHAN</span>
+                    <span>ROLE</span> <span>: STUDENT DEVELOPER</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             2. HALAMAN TENTANG SAYA
+             ========================================== -->
+        <section id="tentang" class="page-section">
+            <h2 class="section-title">IDENTITY // TENTANG SAYA</h2>
+            <div class="identity-panel">
+                <div class="info-grid">
+                    <div>Nama</div> <div>: Rafif Ramadhan</div>
+                    <div>Status</div> <div>: Siswa Kelas XII</div>
+                    <div>Jurusan</div> <div>: Teknik Komputer dan Jaringan / Informatika</div>
+                    <div>Minat</div> <div>: Networking, IoT, Web Development</div>
+                </div>
+                <p style="margin-top: 20px; color: var(--gray);">
+                    Saya adalah seorang siswa yang antusias dalam dunia teknologi, khususnya dalam pengembangan jaringan komputer dan eksperimen mikrokontroler (Internet of Things).
+                </p>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             3. HALAMAN JARINGAN KOMPUTER
+             ========================================== -->
+        <section id="jaringan" class="page-section">
+            <h2 class="section-title">NETWORK // COMPUTER NETWORK</h2>
+            <div class="dashboard-grid">
+                <div class="dash-card">
+                    <h3>IP CONFIGURATION</h3>
+                    <ul class="dash-list">
+                        <li>IP Address: 192.168.1.100</li>
+                        <li>Subnet Mask: 255.255.255.0</li>
+                        <li>Gateway: 192.168.1.1</li>
+                        <li>DNS: 8.8.8.8</li>
+                    </ul>
+                </div>
+                <div class="dash-card">
+                    <h3>TOPOLOGY SKILLS</h3>
+                    <ul class="dash-list">
+                        <li>Routing & Switching</li>
+                        <li>MikroTik Configuration</li>
+                        <li>Cisco Packet Tracer</li>
+                        <li>LAN/WLAN Setup</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             4. HALAMAN IOT & ARDUINO
+             ========================================== -->
+        <section id="iot" class="page-section">
+            <h2 class="section-title">IOT // ARDUINO LAB</h2>
+            <div class="dashboard-grid">
+                <div class="dash-card">
+                    <h3>HARDWARE MODULES</h3>
+                    <ul class="dash-list">
+                        <li>Arduino Uno R3</li>
+                        <li>ESP8266 / ESP32 (NodeMCU)</li>
+                        <li>Sensor Suhu (DHT11/22)</li>
+                        <li>Relay Module 4-Channel</li>
+                    </ul>
+                </div>
+                <div class="dash-card">
+                    <h3>PROJECT LOG</h3>
+                    <ul class="dash-list">
+                        <li>[OK] Smart Home Light Control</li>
+                        <li>[OK] Temperature Monitoring System</li>
+                        <li>[IN PROGRESS] RFID Door Lock</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             5. HALAMAN GALERI
+             ========================================== -->
+        <section id="galeri" class="page-section">
+            <h2 class="section-title">VISUAL // GALERI DOKUMENTASI</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/galeri1.jpg" alt="Dokumentasi 1">
+                    <p class="image-caption">> Konfigurasi Server</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/galeri2.jpg" alt="Dokumentasi 2">
+                    <p class="image-caption">> Project IoT ESP32</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/galeri3.jpg" alt="Dokumentasi 3">
+                    <p class="image-caption">> Perakitan Jaringan</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             6. HALAMAN KONTAK
+             ========================================== -->
+        <section id="kontak" class="page-section">
+            <h2 class="section-title">COMMUNICATION // HUBUNGI SAYA</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>> SYSTEM.CONTACT_INFO</h3>
+                    <p>Silakan hubungi saya untuk kolaborasi proyek, pertanyaan seputar jaringan, atau IoT.</p>
+                    <ul>
+                        <li>📧 Email: rafif.ramadhan@example.com</li>
+                        <li>📱 WhatsApp: +62 812-XXXX-XXXX</li>
+                        <li>📍 Lokasi: Mojokerto, Jawa Timur</li>
+                    </ul>
+                </div>
+
+                <div class="contact-form">
+                    <h3>> TRANSMIT_MESSAGE</h3>
+                    <form onsubmit="event.preventDefault(); showMessageBox();">
+                        <div class="form-group">
+                            <label for="name">NAME_ID:</label>
+                            <input type="text" id="name" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">EMAIL_ADDRESS:</label>
+                            <input type="email" id="email" placeholder="Masukkan email Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">DATA_PAYLOAD:</label>
+                            <textarea id="message" rows="5" placeholder="Ketik pesan Anda di sini..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">[ SEND MESSAGE ]</button>
+                    </form>
+
+                    <!-- Notifikasi Pesan -->
+                    <div id="msgBox" style="display: none; margin-top: 20px; padding: 15px; background: var(--green); color: #000; border-radius: 5px; font-weight: bold;">
+                        > [SUCCESS]: Pesan Anda berhasil dikirim ke server!
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <h2>Rafif.Dev</h2>
+            <p>© 2026 Rafif Ramadhan | All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Menghubungkan ke File JavaScript Eksternal -->
+    <script src="js/script.js"></script>
+</body>
+</html>
